@@ -1,0 +1,34 @@
+#! /usr/bin/env node
+const { version } = require('../package.json')
+const program = require('commander')
+
+// heima --version  => package.json version
+program.version(version)
+
+program
+  .option('-d, --debug', 'debugger commander')
+  .option('--no-debug', 'debugger commander not!')
+  .option('-c, --com <type>', 'debugger commander not!', 'default com')
+  .option('-a, --aim [type]', 'choose to type')
+  // .requiredOption('-h, --host [type]', 'require option')
+  .helpOption('-e, --Help', 'commander helper')
+  .name('heima')
+  .usage("command [options]")
+  .command('clone <source> [destination...]', 'clone destination')
+  .command('rm <dir>', 'remove destination')
+
+program.parse(process.argv)
+console.log('com:' + program.com);
+console.log('aim:' + program.aim);
+if (program.aim === true) {
+  console.log('aim!!!!');
+}
+
+
+// if (program.debug === true) {
+//   console.log('type in debug');
+// } else {
+//   console.log('false flag');
+// }
+
+// console.log(program.version);

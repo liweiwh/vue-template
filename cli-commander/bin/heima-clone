@@ -1,0 +1,17 @@
+#! /usr/bin/env node
+
+const program = require('commander')
+
+program
+  .action((source, destination) => {
+    console.log('TCL: source', source)
+    if (destination && destination.length > 0) {
+      destination.forEach((item) => {
+        console.log('TCL: item', item)
+      })
+    } else {
+      console.error('args length is zero');
+      process.exit(1)
+    }
+  })
+  .parse(process.argv)

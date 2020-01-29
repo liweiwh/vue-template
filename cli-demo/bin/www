@@ -1,0 +1,12 @@
+#! /usr/bin/env node
+
+console.log('hello itheima')
+
+const program = require('commander')
+console.log(process.argv);
+
+program.option('-v, --version <number>', 'choose the version of cli to install')
+
+program.parse(process.argv)
+
+console.log('version is: ' + program.version)

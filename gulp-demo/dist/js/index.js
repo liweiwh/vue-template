@@ -1,0 +1,1 @@
+/Users/itheima/Downloads/3-2 CLI及脚手架工具/resource/charpter3/browser-sync-demo/src/js/index.js

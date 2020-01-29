@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "itheima",
+      "authorEmail": "liweiwh@itcast.cn",
+      "authorUrl": "github.com/itheima-wh"
+    }
+  }
+}
