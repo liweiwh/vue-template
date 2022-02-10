@@ -20,7 +20,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
     "gulp-uglify-es": "^2.0.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "pump": "^3.0.0",
     "rimraf": "^3.0.0"
   },
